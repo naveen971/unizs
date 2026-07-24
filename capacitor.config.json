@@ -1,0 +1,8 @@
+{
+  "appId": "com.unizs.app",
+  "appName": "UNIZS",
+  "webDir": "frontend",
+  "server": {
+    "androidScheme": "https"
+  }
+}
