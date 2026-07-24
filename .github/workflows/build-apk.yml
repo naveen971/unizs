@@ -19,11 +19,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Install Capacitor
-        run: npm install @capacitor/core @capacitor/android
+      - name: Install Capacitor CLI globally
+        run: npm install -g @capacitor/cli
 
       - name: Sync Capacitor
-        run: npx cap sync android
+        run: cap sync android
 
       - name: Setup Java
         uses: actions/setup-java@v4
