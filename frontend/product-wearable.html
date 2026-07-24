@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wearable Devices — UNIZS Private Limited</title>
+  <meta name="description" content="Next-generation health monitoring wearable technology with embedded AI and wireless connectivity.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Orbitron:wght@500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .detail-hero {
+      padding: 140px 0 60px;
+      position: relative;
+      background: radial-gradient(circle at 50% 20%, rgba(74, 158, 255, 0.08), transparent 70%);
+    }
+    .detail-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      margin-top: 40px;
+    }
+    .detail-icon-card {
+      background: rgba(10, 16, 30, 0.7);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 60px 24px;
+      box-shadow: var(--shadow-glow-blue);
+      text-align: center;
+      font-size: 100px;
+    }
+    .capability-card {
+      background: rgba(10, 16, 30, 0.5);
+      border: 1px solid rgba(255, 215, 0, 0.15);
+      border-radius: 14px;
+      padding: 24px;
+      transition: all 0.3s ease;
+    }
+    .capability-card:hover {
+      border-color: var(--accent-gold);
+      transform: translateY(-4px);
+    }
+    .capability-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-top: 30px;
+    }
+    @media(max-width: 768px) {
+      .detail-grid, .capability-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav id="navbar" role="navigation" aria-label="Main Navigation">
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-logo"><img src="assets/images/logo.png" alt="UNIZS Logo" style="width:100%; height:100%; border-radius:50%; object-fit:cover;"></div>
+      <span class="nav-title">UNIZS</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#hero">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#products">Products</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="index.html#contact" class="btn btn-secondary">Get In Touch</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Product Hero -->
+<section class="detail-hero">
+  <div class="container">
+    <a href="index.html#products" style="color:var(--accent-gold); font-size:14px; display:inline-block; margin-bottom:16px;">← Back to All Products</a>
+    <div class="detail-grid">
+      <div>
+        <span class="badge" style="background:rgba(212,168,67,0.15); color:var(--accent-gold); border:1px solid var(--accent-gold); padding:4px 12px; border-radius:20px; font-size:12px; text-transform:uppercase; letter-spacing:1px;">Hardware Product</span>
+        <h1 style="font-family:'Orbitron', sans-serif; font-size:36px; margin:16px 0; color:#fff;">Wearable Devices</h1>
+        <p style="font-size:18px; color:var(--accent-gold); margin-bottom:20px; line-height:1.6;">Next-generation health monitoring wearable technology with embedded AI and wireless connectivity.</p>
+        <p style="color:var(--text-dim); font-size:15px; line-height:1.8;">UNIZS designs and manufactures compact, low-power wearable electronics for continuous health monitoring, activity tracking, and biometric data acquisition. Our devices integrate medical-grade sensors with custom RTOS firmware and BLE communication stacks.</p>
+        <div style="margin-top:30px;">
+          <a href="index.html#contact" class="btn btn-primary">Inquire About This Product →</a>
+        </div>
+      </div>
+      <div class="detail-icon-card">⌚</div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+<!-- Key Features Section -->
+<section style="padding:70px 0;">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Core Capabilities</div>
+      <h2 class="section-title">Key Features & Highlights</h2>
+      <p class="section-subtitle">Engineered with precision, built for real-world performance and reliability.</p>
+    </div>
+    <div class="capability-grid">
+      
+      <div class="capability-card">
+        <h4 style="color:var(--accent-gold); font-size:18px; margin-bottom:8px; font-family:'Space Grotesk', sans-serif;">✦ Medical-Grade Bio Sensors</h4>
+        <p style="color:var(--text-dim); font-size:14px; line-height:1.6;">SpO2, ECG, PPG, galvanic skin response, skin temperature, and accelerometer sensor arrays in miniaturized packages.</p>
+      </div>
+      <div class="capability-card">
+        <h4 style="color:var(--accent-gold); font-size:18px; margin-bottom:8px; font-family:'Space Grotesk', sans-serif;">✦ Ultra-Low Power RTOS</h4>
+        <p style="color:var(--text-dim); font-size:14px; line-height:1.6;">Custom firmware achieving weeks of battery life through intelligent sleep-state management and sensor duty-cycling.</p>
+      </div>
+      <div class="capability-card">
+        <h4 style="color:var(--accent-gold); font-size:18px; margin-bottom:8px; font-family:'Space Grotesk', sans-serif;">✦ Encrypted BLE 5.0 Stack</h4>
+        <p style="color:var(--text-dim); font-size:14px; line-height:1.6;">Secure data transmission to companion mobile apps with AES-128 encryption and GATT profile customization.</p>
+      </div>
+      <div class="capability-card">
+        <h4 style="color:var(--accent-gold); font-size:18px; margin-bottom:8px; font-family:'Space Grotesk', sans-serif;">✦ Flexible PCB & Form Factor</h4>
+        <p style="color:var(--text-dim); font-size:14px; line-height:1.6;">Thin, ergonomic wrist form factors using flexible PCB substrates, conductive textile integration, and IP67 water resistance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Applications Section -->
+<section style="padding:60px 0; background:rgba(6, 11, 25, 0.6);">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Industry Impact</div>
+      <h2 class="section-title">Use Cases & Applications</h2>
+    </div>
+    <div style="max-width:800px; margin:30px auto 0;">
+      <ul style="list-style:none; padding:0;">
+        
+        <li style="padding:16px 20px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:10px; margin-bottom:12px; display:flex; align-items:center; gap:12px; color:#fff;">
+          <span style="color:var(--accent-gold); font-size:18px;">⚡</span> Clinical Patient Continuous Monitoring
+        </li>
+        <li style="padding:16px 20px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:10px; margin-bottom:12px; display:flex; align-items:center; gap:12px; color:#fff;">
+          <span style="color:var(--accent-gold); font-size:18px;">⚡</span> Sports & Athletic Performance Tracking
+        </li>
+        <li style="padding:16px 20px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:10px; margin-bottom:12px; display:flex; align-items:center; gap:12px; color:#fff;">
+          <span style="color:var(--accent-gold); font-size:18px;">⚡</span> Industrial Worker Fatigue & Safety Monitoring
+        </li>
+        <li style="padding:16px 20px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:10px; margin-bottom:12px; display:flex; align-items:center; gap:12px; color:#fff;">
+          <span style="color:var(--accent-gold); font-size:18px;">⚡</span> Elderly Care & Fall Detection Systems
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Call To Action -->
+<section style="padding:80px 0; text-align:center;">
+  <div class="container">
+    <div class="glass-card gold-border" style="padding:50px; max-width:800px; margin:0 auto;">
+      <h3 style="font-family:'Orbitron', sans-serif; font-size:26px; color:#fff; margin-bottom:16px;">Interested in Wearable Devices?</h3>
+      <p style="color:var(--text-dim); margin-bottom:30px;">Speak to our team and let us tailor the right solution for your project requirements.</p>
+      <a href="index.html#contact" class="btn btn-primary">Start a Product Conversation →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer style="background:#020409; border-top:1px solid rgba(255,255,255,0.05); padding:40px 0 20px; font-size:14px; color:var(--text-dim);">
+  <div class="container" style="text-align:center;">
+    <p>© 2026 UNIZS Private Limited. All Rights Reserved. Crafted with Innovation in India 🇮🇳</p>
+  </div>
+</footer>
+
+<script src="assets/js/script.js" defer></script>
+</body>
+</html>
