@@ -356,24 +356,11 @@
       desc: "Industry 4.0 smart factory transformation, PLC/SCADA programming, automated quality inspection systems, robotics integration, and industrial IoT monitoring.",
       features: ["PLC & SCADA System Design", "Machine Vision Quality Check", "Smart Factory Data Analytics", "Industrial Control Panels"]
     },
-    "consulting": {
-      title: "Technology Consulting",
-      img: "assets/images/service_consulting.png",
-      badge: "UNIZS Service Expertise",
-      desc: "Strategic deep-tech advisory services, technological feasibility audits, architecture design, digital transformation roadmap planning, and patent research support.",
-      features: ["Technology Roadmap & Audit", "System Architecture Review", "R&D Tax & IP Consulting", "Digital Transformation Strategy"]
-    },
     "product_eng": {
       title: "Product Engineering",
       img: "assets/images/service_product_eng.png",
       desc: "Full lifecycle hardware & software product engineering from initial concept napkin sketch to mass-manufacturing readiness and certified product deployment.",
       features: ["Concept-to-Production Lifecycle", "Regulatory Compliance Support", "BOM & Supply Chain Management", "Firmware & App Synchronization"]
-    },
-    "incubation": {
-      title: "Startup Incubation",
-      img: "assets/images/service_incubation.png",
-      desc: "Incubation support, hardware lab access, technical mentorship, prototyping equipment, and co-engineering resources for ambitious deep-technology founders.",
-      features: ["Advanced Lab & Equipment Access", "Expert Engineering Mentorship", "MVP Development Assistance", "Investor Readiness Guidance"]
     }
   };
 

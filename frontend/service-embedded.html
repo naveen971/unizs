@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Embedded Systems — UNIZS Private Limited</title>
+  <meta name="description" content="High-reliability embedded hardware design, custom microcontroller firmware development, and real-time co-design.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Orbitron:wght@500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .detail-hero {
+      padding: 140px 0 60px;
+      position: relative;
+      background: radial-gradient(circle at 50% 20%, rgba(74, 158, 255, 0.08), transparent 70%);
+    }
+    .detail-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      margin-top: 40px;
+    }
+    .detail-img-card {
+      background: rgba(10, 16, 30, 0.7);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: var(--shadow-glow-blue);
+      text-align: center;
+    }
+    .detail-img-card img {
+      max-width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      max-height: 380px;
+    }
+    .capability-card {
+      background: rgba(10, 16, 30, 0.5);
+      border: 1px solid rgba(255, 215, 0, 0.15);
+      border-radius: 14px;
+      padding: 24px;
+      transition: all 0.3s ease;
+    }
+    .capability-card:hover {
+      border-color: var(--accent-gold);
+      transform: translateY(-4px);
+    }
+    .capability-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-top: 30px;
+    }
+    @media(max-width: 768px) {
+      .detail-grid, .capability-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav id="navbar" role="navigation" aria-label="Main Navigation">
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-logo"><img src="assets/images/logo.png" alt="UNIZS Logo" style="width:100%; height:100%; border-radius:50%; object-fit:cover;"></div>
+      <span class="nav-title">UNIZS</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#hero">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#domains">Domains</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="index.html#contact" class="btn btn-secondary">Get In Touch</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Service Hero -->
+<section class="detail-hero">
+  <div class="container">
+    <a href="index.html#services" style="color:var(--accent-gold); font-size:14px; display:inline-block; margin-bottom:16px;">← Back to All Services</a>
+    <div class="detail-grid">
+      <div>
+        <span class="badge" style="background:rgba(212,168,67,0.15); color:var(--accent-gold); border:1px solid var(--accent-gold); padding:4px 12px; border-radius:20px; font-size:12px; text-transform:uppercase; letter-spacing:1px;">UNIZS Service Expertise</span>
+        <h1 style="font-family:'Orbitron', sans-serif; font-size:36px; margin:16px 0; color:#fff;">Embedded Systems</h1>
+        <p style="font-size:18px; color:var(--accent-blue); margin-bottom:20px; line-height:1.6;">High-reliability embedded hardware design, custom microcontroller firmware development, and real-time co-design.</p>
+        <p style="color:var(--text-dim); font-size:15px; line-height:1.8;">We specialize in low-power, high-performance embedded systems designed for demanding environments. From custom micro-architecture firmware to real-time operating systems (RTOS), our solutions guarantee microsecond accuracy and high fault tolerance.</p>
+        <div style="margin-top:30px;">
+          <a href="index.html#contact" class="btn btn-primary">Inquire About This Service →</a>
+        </div>
+      </div>
+      <div class="detail-img-card">
+        <img src="assets/images/service_embedded.png" alt="Embedded Systems">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+<!-- Key Capabilities Section -->
+<section style="padding:70px 0;">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Core Technical Strengths</div>
+      <h2 class="section-title">Key Capabilities & Features</h2>
+      <p class="section-subtitle">Our specialized engineering workflow ensures high precision, reliability, and robust performance.</p>
+    </div>
+    <div class="capability-grid">
+      
+      <div class="capability-card">
+        <h4 style="color:var(--accent-gold); font-size:18px; margin-bottom:8px; font-family:'Space Grotesk', sans-serif;">✦ ARM & RISC-V Architecture</h4>
+        <p style="color:var(--text-dim); font-size:14px; line-height:1.6;">Custom hardware abstraction layers (HAL) and low-level driver development across ARM Cortex and RISC-V cores.</p>
+      </div>
+      <div class="capability-card">
+        <h4 style="color:var(--accent-gold); font-size:18px; margin-bottom:8px; font-family:'Space Grotesk', sans-serif;">✦ Real-Time OS (RTOS) Firmware</h4>
+        <p style="color:var(--text-dim); font-size:14px; line-height:1.6;">Deterministic multi-tasking software architectures utilizing FreeRTOS, Zephyr, and custom bare-metal schedulers.</p>
+      </div>
+      <div class="capability-card">
+        <h4 style="color:var(--accent-gold); font-size:18px; margin-bottom:8px; font-family:'Space Grotesk', sans-serif;">✦ Low-Power & Battery Optimization</h4>
+        <p style="color:var(--text-dim); font-size:14px; line-height:1.6;">Energy-harvesting integration and micro-amp sleep state optimization for battery-operated wireless nodes.</p>
+      </div>
+      <div class="capability-card">
+        <h4 style="color:var(--accent-gold); font-size:18px; margin-bottom:8px; font-family:'Space Grotesk', sans-serif;">✦ Custom Board Support Packages (BSP)</h4>
+        <p style="color:var(--text-dim); font-size:14px; line-height:1.6;">Complete bootloader, peripheral driver, and hardware verification toolchains for custom silicon boards.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Applications Section -->
+<section style="padding:60px 0; background:rgba(6, 11, 25, 0.6);">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Industry Impact</div>
+      <h2 class="section-title">Target Applications</h2>
+    </div>
+    <div style="max-width:800px; margin:30px auto 0;">
+      <ul style="list-style:none; padding:0;">
+        
+        <li style="padding:16px 20px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:10px; margin-bottom:12px; display:flex; align-items:center; gap:12px; color:#fff;">
+          <span style="color:var(--accent-blue); font-size:18px;">⚡</span> Smart Energy Metering & Battery Management Systems
+        </li>
+        <li style="padding:16px 20px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:10px; margin-bottom:12px; display:flex; align-items:center; gap:12px; color:#fff;">
+          <span style="color:var(--accent-blue); font-size:18px;">⚡</span> Industrial Micro-Controllers & Sensor Actuators
+        </li>
+        <li style="padding:16px 20px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:10px; margin-bottom:12px; display:flex; align-items:center; gap:12px; color:#fff;">
+          <span style="color:var(--accent-blue); font-size:18px;">⚡</span> Medical Device Firmware & Telemetry
+        </li>
+        <li style="padding:16px 20px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:10px; margin-bottom:12px; display:flex; align-items:center; gap:12px; color:#fff;">
+          <span style="color:var(--accent-blue); font-size:18px;">⚡</span> Automotive ECU & CAN-Bus Telematics
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Call To Action -->
+<section style="padding:80px 0; text-align:center;">
+  <div class="container">
+    <div class="glass-card gold-border" style="padding:50px; max-width:800px; margin:0 auto;">
+      <h3 style="font-family:'Orbitron', sans-serif; font-size:26px; color:#fff; margin-bottom:16px;">Ready to Elevate Your Technology with Embedded Systems?</h3>
+      <p style="color:var(--text-dim); margin-bottom:30px;">Partner with UNIZS to turn technical requirements into high-performance commercial and defense solutions.</p>
+      <a href="index.html#contact" class="btn btn-primary">Start a Project Consultation →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer style="background:#020409; border-top:1px solid rgba(255,255,255,0.05); padding:40px 0 20px; font-size:14px; color:var(--text-dim);">
+  <div class="container" style="text-align:center;">
+    <p>© 2026 UNIZS Private Limited. All Rights Reserved. Crafted with Innovation in India 🇮🇳</p>
+  </div>
+</footer>
+
+<script src="assets/js/script.js" defer></script>
+</body>
+</html>
