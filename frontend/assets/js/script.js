@@ -245,27 +245,29 @@
   let currentSlide = 0;
   let slideInterval;
 
-  function showSlide(index) {
-    slides.forEach(function(s) { s.classList.remove('active'); });
-    dots.forEach(function(d) { d.classList.remove('active'); });
-    currentSlide = index;
-    slides[currentSlide].classList.add('active');
-    dots[currentSlide].classList.add('active');
-  }
+  if (slides.length > 0) {
+    function showSlide(index) {
+      slides.forEach(function(s) { s.classList.remove('active'); });
+      dots.forEach(function(d) { d.classList.remove('active'); });
+      currentSlide = index;
+      slides[currentSlide].classList.add('active');
+      dots[currentSlide].classList.add('active');
+    }
 
-  function nextSlide() {
-    showSlide((currentSlide + 1) % slides.length);
-  }
+    function nextSlide() {
+      showSlide((currentSlide + 1) % slides.length);
+    }
 
-  dots.forEach(function(dot) {
-    dot.addEventListener('click', function() {
-      clearInterval(slideInterval);
-      showSlide(parseInt(dot.getAttribute('data-slide')));
-      slideInterval = setInterval(nextSlide, 4000);
+    dots.forEach(function(dot) {
+      dot.addEventListener('click', function() {
+        clearInterval(slideInterval);
+        showSlide(parseInt(dot.getAttribute('data-slide')));
+        slideInterval = setInterval(nextSlide, 4000);
+      });
     });
-  });
 
-  slideInterval = setInterval(nextSlide, 4000);
+    slideInterval = setInterval(nextSlide, 4000);
+  }
 
   // ─── Rotating gradient border for project cards ───
   let cardAngle = 0;
